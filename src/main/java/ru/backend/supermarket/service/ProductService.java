@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import ru.backend.supermarket.dto.ProductDto;
 import ru.backend.supermarket.model.Product;
 import ru.backend.supermarket.repository.ProductRepository;
+import ru.backend.supermarket.specification.ProductSpecification;
 
 import java.util.*;
 

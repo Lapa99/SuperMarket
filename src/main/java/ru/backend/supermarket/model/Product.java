@@ -23,9 +23,6 @@ public class Product {
     private String title;
     @Column(name = "cost", nullable = false)
     private int cost;
-    @ManyToOne
-    @JoinColumn(name = "category_id")
-    private Category category;
     @CreatedDate
     private LocalDateTime createdDateTime;
     @LastModifiedDate

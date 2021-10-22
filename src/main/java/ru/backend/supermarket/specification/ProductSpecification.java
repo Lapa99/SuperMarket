@@ -1,4 +1,4 @@
-package ru.backend.supermarket.service;
+package ru.backend.supermarket.specification;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

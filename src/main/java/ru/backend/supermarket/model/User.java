@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-import java.util.Collection;
 import java.util.UUID;
 
 @Entity
@@ -24,9 +23,6 @@ public class User {
     private String password;
     @Column(name = "email", nullable = false)
     private String email;
-    @ManyToMany
-    @JoinTable (name = "user_roles",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Collection<Role> roles;
+    @Column(name = "role", nullable = false)
+    private String role;
 }

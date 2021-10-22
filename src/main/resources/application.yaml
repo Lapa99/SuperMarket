@@ -1,0 +1,12 @@
+server:
+  port: 8189
+  servlet:
+    context-path: /supermarket
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SuperMarket
+    username: postgres
+    password: postgres
+  liquibase:
+    change-log: classpath:db/changelog-master.xml
+
